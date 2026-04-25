@@ -68,8 +68,13 @@ body {
   z-index: 100;
   background: var(--bg-alt);
   border-bottom: 0.5px solid var(--border);
-  padding: 0 2rem;
   height: 48px;
+}
+.topbar-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -92,7 +97,7 @@ body {
 .hero       { padding: 6rem 3rem; background: var(--bg-alt); border-bottom: 0.5px solid var(--border); }
 .hero-inner { max-width: 860px; margin: 0 auto; }
 .hero-h     { font-size: 64px; font-weight: 500; color: var(--text-primary); line-height: 1.2; margin-bottom: 1rem; }
-.hero-sub   { font-size: 36px; color: var(--text-secondary); line-height: 1.55; max-width: 540px; margin-bottom: 2rem; }
+.hero-sub   { font-size: 36px; color: var(--text-secondary); line-height: 1.55; margin-bottom: 2rem; }
 
 .hero-stats { display: flex; gap: 12px; flex-wrap: wrap; }
 .hstat {
@@ -100,6 +105,10 @@ body {
   background: var(--surface); border: 0.5px solid var(--border);
   border-radius: 8px; padding: 12px 16px 10px 16px;
   min-width: 160px;
+}
+.hstat-location {
+  min-width: 0;
+  width: fit-content;
 }
 .hstat-dot  { position: absolute; top: 10px; right: 10px; width: 7px; height: 7px; border-radius: 50%; }
 .dot-green  { background: var(--dot-green); }
@@ -297,7 +306,7 @@ body {
 
 /* ── Responsive ── */
 @media (max-width: 640px) {
-  .topbar  { padding: 0 1rem; }
+  .topbar-inner { padding: 0 1rem; }
   .tb-links { gap: 0.75rem; }
   .sec, .hero { padding-left: 1.25rem; padding-right: 1.25rem; }
   .about-top  { grid-template-columns: 1fr; }
