@@ -139,7 +139,7 @@ body {
 .about-img-ph     { font-size: 14px; color: var(--border-mid); text-align: center; }
 
 /* ── What I Bring ── */
-.brings-divider { margin-top: 2.5rem; padding-top: 2rem; border-top: 0.5px solid var(--border); }
+.brings-divider { margin-top: 2.5rem; padding-top: 2rem; border-top: none; }
 .brings-grid    { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 1rem; }
 .bc             { background: var(--surface-2); border-radius: 10px; padding: 1.25rem; border: 0.5px solid var(--border); }
 .bc-icon        { width: 30px; height: 30px; border-radius: 6px; background: var(--accent-bg); display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
@@ -204,7 +204,7 @@ body {
 .fp:hover:not(.active) { color: var(--text-secondary); border-color: var(--accent); }
 
 .legend { display: none; }
-.sgrid  { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.25rem; min-height: 44px; align-content: flex-start; }
+.sgrid  { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.25rem; min-height: 280px; align-content: flex-start; }
 
 .st {
   font-size: 18px; padding: 6px 14px; border-radius: 20px;
