@@ -39,14 +39,14 @@
   --teal-text:   #94D2BD;
 
   /* Delivery — amber/orange family */
-  --crimson-bg:     #1A0800;
+  --crimson-bg:     #2A1204;
   --crimson-border: #CA6702;
-  --crimson-text:   #FFCB69;
+  --crimson-text:   #E1A37A;
 
   /* People — terracotta/red family */
-  --slate-bg:     #1A0800;
-  --slate-border: #BB3E03;
-  --slate-text:   #E8AC65;
+  --slate-bg:     #1A0E24;
+  --slate-border: #7B5EA7;
+  --slate-text:   #B7A4D4;
 
   /* ── Bring cards icon bg ── */
   --accent-bg-icon: #001A22;
@@ -94,7 +94,7 @@ body {
 .sec-body   { font-size: 18px; color: var(--text-secondary); line-height: 1.8; max-width: 640px; }
 
 /* ── Hero ── */
-.hero       { padding: 6rem 3rem; background: #2E4130; border-bottom: 0.5px solid var(--border); }
+.hero       { padding: 6rem 3rem; background: #001219; border-bottom: 0.5px solid var(--border); }
 .hero-inner { max-width: 860px; margin: 0 auto; }
 .hero-h     { font-size: 64px; font-weight: 500; color: var(--text-primary); line-height: 1.2; margin-bottom: 1rem; }
 .hero-sub   { font-size: 24px; color: var(--text-secondary); line-height: 1.55; margin-bottom: 2rem; }
@@ -102,11 +102,11 @@ body {
 .hero-stats { display: flex; gap: 12px; flex-wrap: wrap; }
 .hstat {
   position: relative;
-  background: var(--accent);
-  border: 0.5px solid var(--accent-hover);
+  background: var(--surface);
+  border: 0.5px solid var(--border-mid);
   border-radius: 8px; padding: 12px 16px 10px 16px;
   min-width: 160px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
 }
 .hstat-location {
   min-width: 0;
