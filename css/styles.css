@@ -98,6 +98,8 @@ body {
 .hero {
   min-height: 85vh;
   padding: 4rem 0;
+  display: flex;
+  align-items: center;
   background:
     linear-gradient(rgba(0, 18, 25, 0.78), rgba(0, 18, 25, 0.78)),
     url("../Images/hero.jpg") center / cover no-repeat;
@@ -127,10 +129,14 @@ body {
 .hstat-val  { font-size: 18px; font-weight: 500; color: var(--text-primary); padding-right: 16px; }
 
 /* ── About layout ── */
-.about-top { display: grid; grid-template-columns: 5fr 3fr; gap: 2.5rem; align-items: start; }
+.about-top { display: grid; grid-template-columns: 5fr 3fr; gap: 2.5rem; align-items: stretch; }
 .about-copy { display: flex; flex-direction: column; }
 .about-img {
-  width: 100%; aspect-ratio: 1/1;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  justify-self: end;
   background: var(--surface); border-radius: 10px;
   border: 0.5px solid var(--border);
   overflow: hidden; display: flex; align-items: center; justify-content: center;
