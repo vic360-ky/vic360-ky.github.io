@@ -1,58 +1,57 @@
 /* ═══════════════════════════════════════════════
    Victoria Gee — Personal Site
-   Palette: forest green base, sage surfaces,
-   amber accent, cream text
+   Palette: earthy neutrals with warm highlights
    ═══════════════════════════════════════════════ */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
   /* Backgrounds */
-  --bg:          #364D37;   /* dark forest green — page base */
-  --bg-alt:      #2E4130;   /* slightly deeper green — alt sections / topbar */
-  --surface:     #445840;   /* raised surface — cards, inputs */
-  --surface-2:   #3D5239;   /* mid surface — media cards, skill tags */
+  --bg:          #9B9B7A;
+  --bg-alt:      #BAA587;
+  --surface:     #797D62;
+  --surface-2:   #997B66;
 
   /* Borders */
-  --border:      #546655;   /* main border */
-  --border-mid:  #647566;   /* mid-weight border */
+  --border:      #797D62;
+  --border-mid:  #997B66;
 
-  /* Accent — amber/gold */
-  --accent:      #DFA03F;
-  --accent-hover:#C8901E;
-  --accent-bg:   #3A3120;   /* dark amber-tinted bg */
-  --accent-text: #F0C870;   /* light amber for text on dark */
+  /* Highlights */
+  --accent:      #F1DCA7;
+  --accent-hover:#D9AE94;
+  --accent-bg:   #D9AE94;
+  --accent-text: #797D62;
 
-  /* Secondary accent — terracotta */
-  --terra:       #BA9474;
-  --terra-bg:    #3A2820;
-  --terra-text:  #E8C0A0;
+  /* Secondary highlight */
+  --terra:       #D9AE94;
+  --terra-bg:    #997B66;
+  --terra-text:  #F1DCA7;
 
-  /* Skill category colors */
-  --teal:        #4A8070;   /* technical — sage teal */
-  --teal-bg:     #1E3028;
-  --teal-border: #3A6050;
-  --teal-text:   #90C8B8;
+  /* Varied group colors */
+  --teal:        #FFCB69;
+  --teal-bg:     #FFCB69;
+  --teal-border: #E8AC65;
+  --teal-text:   #797D62;
 
-  --crimson:     #511012;   /* delivery — deep crimson */
-  --crimson-bg:  #280810;
-  --crimson-border: #6A2020;
-  --crimson-text:#E09090;
+  --crimson:     #E8AC65;
+  --crimson-bg:  #E8AC65;
+  --crimson-border: #D08C60;
+  --crimson-text:#797D62;
 
-  --slate:       #3E5461;   /* people — slate blue */
-  --slate-bg:    #1C2830;
-  --slate-border:#4E6878;
-  --slate-text:  #90B8D0;
+  --slate:       #D08C60;
+  --slate-bg:    #D08C60;
+  --slate-border:#997B66;
+  --slate-text:  #797D62;
 
   /* Text */
-  --text-primary:   #F0E1BB;   /* warm cream */
-  --text-secondary: #C8B890;   /* muted cream */
-  --text-muted:     #9A9070;   /* mid muted */
-  --text-faint:     #6A6850;   /* faint / disabled */
+  --text-primary:   #797D62;
+  --text-secondary: #797D62;
+  --text-muted:     #997B66;
+  --text-faint:     #997B66;
 
   /* Status dots */
-  --dot-green:   #90C8B8;
-  --dot-amber:   #DFA03F;
+  --dot-green:   #FFCB69;
+  --dot-amber:   #E8AC65;
 }
 
 html { scroll-behavior: smooth; }
@@ -183,7 +182,7 @@ body {
   border: 0.5px solid var(--border-mid); background: transparent;
   color: var(--text-muted); cursor: pointer; font-family: inherit; transition: all 0.15s;
 }
-.fp.active           { background: var(--accent); border-color: var(--accent); color: #1A1200; }
+.fp.active           { background: var(--accent); border-color: var(--accent); color: var(--text-primary); }
 .fp:hover:not(.active) { color: var(--text-secondary); border-color: var(--accent); }
 
 .legend { display: none; }
@@ -205,7 +204,7 @@ body {
 .addrow.on { display: flex; }
 .addlbl    { font-size: 13px; color: var(--text-muted); }
 .addlbl span { color: var(--text-secondary); font-weight: 500; }
-.btnadd    { font-size: 12px; font-weight: 500; padding: 6px 14px; border-radius: 6px; background: var(--accent); color: #1A1200; border: none; cursor: pointer; }
+.btnadd    { font-size: 12px; font-weight: 500; padding: 6px 14px; border-radius: 6px; background: var(--accent); color: var(--text-primary); border: none; cursor: pointer; }
 .btnadd:hover { background: var(--accent-hover); }
 .addok     { font-size: 12px; color: var(--accent-text); display: none; align-items: center; gap: 6px; }
 .pdot      { width: 7px; height: 7px; border-radius: 50%; background: var(--accent-text); flex-shrink: 0; }
@@ -283,7 +282,7 @@ body {
 .res-s  { font-size: 13px; color: var(--text-faint); }
 .btndl  {
   font-size: 13px; font-weight: 500; padding: 9px 20px;
-  border-radius: 6px; background: var(--accent); color: #1A1200;
+  border-radius: 6px; background: var(--accent); color: var(--text-primary);
   border: none; cursor: pointer; text-decoration: none; display: inline-block;
 }
 .btndl:hover { background: var(--accent-hover); }
