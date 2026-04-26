@@ -81,6 +81,7 @@ body {
   justify-content: space-between;
 }
 .tb-name  { font-size: 24px; font-weight: 500; color: var(--text-primary); letter-spacing: 0.01em; }
+.tb-name  { text-decoration: none; }
 .tb-links { display: flex; gap: 1.5rem; }
 .tb-links a { font-size: 18px; color: var(--accent-text); text-decoration: none; transition: color 0.15s; }
 .tb-links a:hover { color: var(--text-primary); }
@@ -305,12 +306,12 @@ body {
 }
 
 .recents-row .media-embed-card {
-  flex: 0 0 260px;
+  flex: 0 0 320px;
 }
 
 .recents-row .mcard {
   flex-shrink: 0;
-  width: 80px;
+  width: auto;
 }
 
 .alltime-embeds-row {
@@ -328,8 +329,15 @@ body {
 }
 
 .alltime-covers-row .mcard {
-  flex: 0 0 calc((100% - 80px) / 9);
-  min-width: 63px;
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.recents-row .mposter,
+.alltime-covers-row .mposter {
+  height: 152px;
+  width: auto;
+  aspect-ratio: 2 / 3;
 }
 
 .media-embed-card {
@@ -348,7 +356,7 @@ body {
   .recents-row { flex-wrap: wrap; }
   .recents-row .media-embed-card { flex: 1 1 100%; }
   .alltime-embeds-row { grid-template-columns: 1fr; }
-  .alltime-covers-row .mcard { flex: 0 0 63px; }
+  .alltime-covers-row .mcard { flex: 0 0 auto; width: auto; }
 }
 
 /* ── Resume ── */
