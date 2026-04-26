@@ -131,8 +131,14 @@ body {
 .hstat-val  { font-size: 18px; font-weight: 500; color: var(--text-primary); padding-right: 16px; }
 
 /* ── About layout ── */
-.about-top { display: grid; grid-template-columns: 5fr 3fr; gap: 2.5rem; align-items: stretch; }
-.about-copy { display: flex; flex-direction: column; }
+.about-top {
+  display: grid;
+  grid-template-columns: min(70vw, 840px) auto;
+  gap: 2.5rem;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.about-copy { display: flex; flex-direction: column; width: min(70vw, 840px); }
 .about-img {
   height: 100%;
   width: auto;
