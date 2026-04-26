@@ -298,21 +298,21 @@ body {
 
 /* ── Beyond Work — redesigned media rows ── */
 .recents-row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  align-items: start;
+  gap: 10px;
   margin-top: 1rem;
-  flex-wrap: nowrap;
   width: 100%;
 }
 
 .recents-row .media-embed-card {
-  flex: 0 0 320px;
+  grid-column: span 3;
+  width: 100%;
 }
 
 .recents-row .mcard {
-  flex-shrink: 0;
-  width: auto;
+  width: 100%;
 }
 
 .alltime-embeds-row {
@@ -355,8 +355,8 @@ body {
 }
 
 @media (max-width: 640px) {
-  .recents-row { flex-wrap: wrap; }
-  .recents-row .media-embed-card { flex: 1 1 100%; }
+  .recents-row { grid-template-columns: 1fr; }
+  .recents-row .media-embed-card { grid-column: auto; }
   .alltime-embeds-row { grid-template-columns: 1fr; }
   .alltime-covers-row .mcard { flex: 0 0 auto; width: auto; }
 }
