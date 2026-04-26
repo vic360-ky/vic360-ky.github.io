@@ -295,6 +295,62 @@ body {
 .vtag-personal { font-size: 14px; padding: 4px 10px; border-radius: 14px; background: var(--teal-bg);    border: 0.5px solid var(--teal-border);    color: var(--teal-text);    }
 .vtag-global   { font-size: 14px; padding: 4px 10px; border-radius: 14px; background: var(--accent-bg); border: 0.5px solid var(--border-mid);     color: var(--accent-text); }
 
+/* ── Beyond Work — redesigned media rows ── */
+.recents-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 1rem;
+  flex-wrap: nowrap;
+}
+
+.recents-row .media-embed-card {
+  flex: 0 0 260px;
+}
+
+.recents-row .mcard {
+  flex-shrink: 0;
+  width: 80px;
+}
+
+.alltime-embeds-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 1rem;
+}
+
+.alltime-covers-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.alltime-covers-row .mcard {
+  flex: 0 0 calc((100% - 80px) / 9);
+  min-width: 63px;
+}
+
+.media-embed-card {
+  background: var(--surface);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 0.5px solid var(--border);
+}
+
+.media-embed-card iframe {
+  display: block;
+  border-radius: 10px;
+}
+
+@media (max-width: 640px) {
+  .recents-row { flex-wrap: wrap; }
+  .recents-row .media-embed-card { flex: 1 1 100%; }
+  .alltime-embeds-row { grid-template-columns: 1fr; }
+  .alltime-covers-row .mcard { flex: 0 0 63px; }
+}
+
 /* ── Resume ── */
 .res-card {
   background: var(--surface); border: 0.5px solid var(--border);
