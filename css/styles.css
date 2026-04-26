@@ -141,7 +141,7 @@ body {
 .about-copy { display: flex; flex-direction: column; min-width: 0; }
 .about-img {
   align-self: stretch;
-  height: 100%;
+  height: min(100%, 520px);
   width: auto;
   aspect-ratio: 1/1;
   justify-self: end;
@@ -152,6 +152,8 @@ body {
 }
 .about-img img    { width: 100%; height: 100%; object-fit: cover; display: block; }
 .about-img-ph     { font-size: 14px; color: var(--border-mid); text-align: center; }
+
+#contact .sec-body { max-width: none; }
 
 /* ── What I Bring ── */
 .brings-divider { margin-top: 2.5rem; padding-top: 2rem; border-top: none; }
