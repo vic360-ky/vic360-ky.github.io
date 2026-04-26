@@ -300,9 +300,10 @@ body {
 .recents-row {
   display: flex;
   align-items: flex-start;
-  gap: 14px;
+  justify-content: space-between;
   margin-top: 1rem;
   flex-wrap: nowrap;
+  width: 100%;
 }
 
 .recents-row .media-embed-card {
@@ -323,9 +324,10 @@ body {
 
 .alltime-covers-row {
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 1rem;
+  width: 100%;
 }
 
 .alltime-covers-row .mcard {
