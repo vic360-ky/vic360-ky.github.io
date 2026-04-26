@@ -91,7 +91,7 @@ body {
 .sec:nth-child(odd)  { background: var(--bg-alt); }
 .sec:nth-child(even) { background: var(--bg); }
 .sec-inner  { width: 70%; max-width: 1200px; margin: 0 auto; }
-.sec-tag    { font-size: 14px; font-weight: 500; color: var(--accent-text); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.75rem; }
+.sec-tag    { font-size: 18px; font-weight: 500; color: var(--accent-text); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.75rem; }
 .sec-h      { font-size: 42px; font-weight: 500; color: var(--text-primary); margin-bottom: 1rem; }
 .sec-body   { font-size: 18px; color: var(--text-secondary); line-height: 1.8; max-width: 640px; }
 
