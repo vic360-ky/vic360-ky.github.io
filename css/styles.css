@@ -94,6 +94,7 @@ body {
 .sec-tag    { font-size: 18px; font-weight: 500; color: var(--accent-text); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.75rem; }
 .sec-h      { font-size: 42px; font-weight: 500; color: var(--text-primary); margin-bottom: 1rem; }
 .sec-body   { font-size: 18px; color: var(--text-secondary); line-height: 1.8; max-width: 640px; }
+.beyond-intro { max-width: none; }
 
 /* ── Hero ── */
 .hero {
@@ -187,7 +188,7 @@ body {
   background: var(--accent-bg); color: var(--accent-text); border: 0.5px solid var(--accent);
 }
 .erole    { font-size: 24px; font-weight: 500; color: var(--text-primary); margin-bottom: 8px; }
-.ebullets { font-size: 18px; color: var(--text-muted); line-height: 1.7; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+.ebullets { font-size: 16px; color: var(--text-muted); line-height: 1.7; list-style: none; display: flex; flex-direction: column; gap: 6px; }
 .ebullets li           { padding-left: 14px; position: relative; }
 .ebullets li::before   { content: "–"; position: absolute; left: 0; color: var(--accent); }
 
@@ -288,8 +289,8 @@ body {
 .msub          { display: none; }
 
 /* ── Talk to me ── */
-.talk-card    { background: var(--surface); border: 0.5px solid var(--border); border-radius: 10px; padding: 1.25rem; margin-top: 1rem; }
-.talk-cat     { font-size: 14px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
+.talk-card    { background: transparent; border: none; border-radius: 0; padding: 0; margin-top: 0; }
+.talk-heading { margin-top: 2.5rem; margin-bottom: 1rem; }
 .talk-legend  { display: flex; gap: 12px; margin-bottom: 10px; flex-wrap: wrap; }
 .talk-legend-item { display: flex; align-items: center; gap: 5px; font-size: 14px; color: var(--text-faint); }
 .talk-legend-dot  { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
@@ -389,7 +390,7 @@ body {
 .ctabtn:hover { background: var(--surface); border-color: var(--accent); color: var(--accent-text); }
 
 /* Extra breathing room on final section */
-#contact { padding-bottom: 150px; }
+#contact { padding-bottom: 80px; }
 
 /* ── Responsive ── */
 @media (max-width: 640px) {
