@@ -110,7 +110,7 @@ body {
 .sec-inner  { width: 70%; max-width: 1200px; margin: 0 auto; }
 .sec-tag    { font-size: 18px; font-weight: 500; color: var(--accent-text); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.75rem; }
 .sec-h { font-size: 30px; font-weight: 600; color: var(--text-primary); letter-spacing: -0.01em; margin-bottom: 1rem; }
-.sec-body   { font-size: 18px; color: var(--text-secondary); line-height: 1.8; max-width: 640px; }
+.sec-body   { font-size: 18px; color: var(--text-secondary); line-height: 1.8; }
 .beyond-intro { max-width: none; }
 
 /* ── Hero ── */
@@ -173,7 +173,7 @@ body {
 #contact .sec-body { max-width: none; }
 
 /* ── What I Bring ── */
-.brings-divider { margin-top: 1rem; padding-top: 2rem; border-top: none; }
+.brings-divider { margin-top: 1rem; padding-top: 0; border-top: none; }
 .brings-grid    { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 1rem; }
 .bc             { background: var(--surface-2); border-radius: 10px; padding: 1.25rem; border: 0.5px solid var(--border); }
 .bc-icon        { width: 30px; height: 30px; border-radius: 6px; background: var(--accent-bg); display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
