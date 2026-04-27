@@ -169,8 +169,41 @@ function initTabs() {
   });
 }
 
+/* ── Section reveal on scroll ────────────────── */
+function initSectionReveal() {
+  const sections = document.querySelectorAll('.hero-inner, .sec-inner');
+  if (!sections.length) return;
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion) {
+    sections.forEach((el) => el.classList.add('is-visible'));
+    return;
+  }
+
+  sections.forEach((el) => el.classList.add('reveal-on-scroll'));
+
+  if (!('IntersectionObserver' in window)) {
+    sections.forEach((el) => el.classList.add('is-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      obs.unobserve(entry.target);
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: '0px 0px -8% 0px'
+  });
+
+  sections.forEach((el) => observer.observe(el));
+}
+
 /* ── Init ────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
   initSkills();
   initTabs();
+  initSectionReveal();
 });
