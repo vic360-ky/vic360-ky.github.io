@@ -150,7 +150,7 @@ body {
 /* ── About layout ── */
 .about-top {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: 2fr 1fr;
   gap: 2.5rem;
   align-items: stretch;
   justify-content: stretch;
@@ -178,8 +178,8 @@ body {
 .bc             { background: var(--surface-2); border-radius: 10px; padding: 1.25rem; border: 0.5px solid var(--border); }
 .bc-icon        { width: 30px; height: 30px; border-radius: 6px; background: var(--accent-bg); display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
 .bc-icon        { display: inline-flex; vertical-align: middle; margin-bottom: 0; margin-right: 8px; }
-.bc-t           { font-size: 24px; font-weight: 500; color: var(--text-primary); margin-bottom: 0; display: inline-block; vertical-align: middle; }
-.bc-d           { font-size: 18px; color: var(--text-muted); line-height: 1.6; margin-top: 10px; }
+.bc-t           { font-size: 22px; font-weight: 500; color: var(--text-primary); margin-bottom: 0; display: inline-block; vertical-align: middle; }
+.bc-d           { font-size: 16px; color: var(--text-muted); line-height: 1.6; margin-top: 10px; }
 
 /* ── Experience ── */
 .exp-tabs {
@@ -215,7 +215,7 @@ body {
 }
 .erow:last-child { border-bottom: none; }
 .emeta           { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
-.emeta strong    { display: block; font-size: 20px; line-height: 1.2; font-weight: 500; color: var(--text-secondary); margin-bottom: 2px; font-family: "Space Grotesk", "Segoe UI", sans-serif; }
+.emeta strong    { display: block; font-size: 20px; line-height: 1.2; font-weight: 500; color: var(--text-secondary); margin-top: 26px; margin-bottom: 2px; font-family: "Space Grotesk", "Segoe UI", sans-serif; }
 .etag {
   display: inline-block; font-size: 12px; font-weight: 500;
   padding: 2px 7px; border-radius: 8px; margin-top: 5px;
@@ -429,7 +429,7 @@ body {
 .ctabtn:hover { background: var(--surface); border-color: var(--accent); color: var(--accent-text); }
 
 /* Extra breathing room on final section */
-#contact { padding-bottom: 80px; }
+#contact { padding-bottom: 120px; }
 
 /* ── Responsive ── */
 @media (max-width: 640px) {
