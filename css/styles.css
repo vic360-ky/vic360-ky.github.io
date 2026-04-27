@@ -452,6 +452,12 @@ body {
     width: 88%;
     text-align: center;
   }
+  .sec-body,
+  .informed-body,
+  .bc-d,
+  .ebullets {
+    text-align: left;
+  }
   .hero-stats,
   .exp-tabs,
   .frow,
@@ -464,8 +470,16 @@ body {
   .about-top  { grid-template-columns: 1fr; }
   .about-img { justify-self: center; }
   .brings-grid { grid-template-columns: 1fr; }
-  .erow   { grid-template-columns: 1fr; gap: 0.5rem; }
-  .emeta { text-align: center; }
+  .erow {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .erow > .emeta {
+    order: 1;
+    text-align: left;
+  }
+  .erow > div:nth-child(2) { order: 2; }
   .exp-tabs { gap: 1.25rem; }
   .etab { font-size: clamp(28px, 8vw, 36px); }
 
@@ -491,6 +505,14 @@ body {
     width: 100%;
     height: auto;
     aspect-ratio: 2 / 3;
+  }
+  .st {
+    font-size: 14px;
+    padding: 5px 11px;
+  }
+  .vtag-personal,
+  .vtag-global {
+    font-size: 14px;
   }
 }
 
