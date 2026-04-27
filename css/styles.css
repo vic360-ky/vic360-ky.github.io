@@ -186,7 +186,7 @@ body {
   display: flex;
   gap: calc(2rem + 20px);
   margin-top: 0.25rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   border-bottom: 0.5px solid var(--border);
 }
 .etab {
@@ -215,7 +215,7 @@ body {
 }
 .erow:last-child { border-bottom: none; }
 .emeta           { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
-.emeta strong    { display: block; font-size: 20px; line-height: 1.2; font-weight: 500; color: var(--text-secondary); margin-top: 26px; margin-bottom: 2px; font-family: "Space Grotesk", "Segoe UI", sans-serif; }
+.emeta strong    { display: block; font-size: 20px; line-height: 1.2; font-weight: 500; color: var(--text-secondary); margin-top: 10px; margin-bottom: 2px; font-family: "Space Grotesk", "Segoe UI", sans-serif; }
 .etag {
   display: inline-block; font-size: 12px; font-weight: 500;
   padding: 2px 7px; border-radius: 8px; margin-top: 5px;
