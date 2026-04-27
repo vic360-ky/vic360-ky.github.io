@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&display=swap");
+
 /* ═══════════════════════════════════════════════
    Victoria Gee — Personal Site
    Palette: earthy neutrals with warm highlights
@@ -107,7 +109,7 @@ body {
 .sec:nth-child(even) { background: var(--bg); }
 .sec-inner  { width: 70%; max-width: 1200px; margin: 0 auto; }
 .sec-tag    { font-size: 18px; font-weight: 500; color: var(--accent-text); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.75rem; }
-.sec-h { font-size: 22px; font-weight: 600; color: var(--text-primary); letter-spacing: -0.01em; margin-bottom: 1rem; }
+.sec-h { font-size: 30px; font-weight: 600; color: var(--text-primary); letter-spacing: -0.01em; margin-bottom: 1rem; }
 .sec-body   { font-size: 18px; color: var(--text-secondary); line-height: 1.8; max-width: 640px; }
 .beyond-intro { max-width: none; }
 
@@ -123,7 +125,7 @@ body {
   border-bottom: 0.5px solid var(--border);
 }
 .hero-inner { width: 70%; max-width: 1200px; margin: 0 auto; }
-.hero-h { font-size: 36px; font-weight: 600; color: var(--text-primary); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; }
+.hero-h { font-size: 48px; font-weight: 600; color: var(--text-primary); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; }
 .hero-sub   { font-size: 24px; color: var(--text-secondary); line-height: 1.55; margin-bottom: 2rem; }
 
 .hero-stats { display: flex; gap: 12px; flex-wrap: wrap; }
@@ -176,7 +178,7 @@ body {
 .bc             { background: var(--surface-2); border-radius: 10px; padding: 1.25rem; border: 0.5px solid var(--border); }
 .bc-icon        { width: 30px; height: 30px; border-radius: 6px; background: var(--accent-bg); display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
 .bc-icon        { display: inline-flex; vertical-align: middle; margin-bottom: 0; margin-right: 8px; }
-.bc-t           { font-size: 24px; font-weight: 500; color: var(--text-primary); margin-bottom: 0; display: inline-block; vertical-align: middle; }
+.bc-t           { font-size: 30px; font-weight: 500; color: var(--text-primary); margin-bottom: 0; display: inline-block; vertical-align: middle; }
 .bc-d           { font-size: 18px; color: var(--text-muted); line-height: 1.6; margin-top: 10px; }
 
 /* ── Experience ── */
@@ -213,7 +215,7 @@ body {
 }
 .erow:last-child { border-bottom: none; }
 .emeta           { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
-.emeta strong    { display: block; font-size: 24px; font-weight: 500; color: var(--text-secondary); margin-bottom: 2px; }
+.emeta strong    { display: block; font-size: 24px; font-weight: 500; color: var(--text-secondary); margin-bottom: 2px; font-family: "Space Grotesk", "Segoe UI", sans-serif; }
 .etag {
   display: inline-block; font-size: 14px; font-weight: 500;
   padding: 2px 7px; border-radius: 8px; margin-top: 5px;
@@ -224,7 +226,7 @@ body {
   padding: 3px 10px; border-radius: 6px; margin-top: 6px;
   background: var(--accent-bg); color: var(--accent-text); border: 0.5px solid var(--accent);
 }
-.erole    { font-size: 24px; font-weight: 500; color: var(--text-primary); margin-bottom: 8px; }
+.erole    { font-size: 30px; font-weight: 500; color: var(--text-primary); margin-bottom: 8px; }
 .ebullets { font-size: 16px; color: var(--text-muted); line-height: 1.7; list-style: none; display: flex; flex-direction: column; gap: 6px; }
 .ebullets li           { padding-left: 14px; position: relative; }
 .ebullets li::before   { content: "–"; position: absolute; left: 0; color: var(--accent); }
@@ -407,7 +409,7 @@ body {
   display: flex; align-items: center; justify-content: space-between;
   margin-top: 1.5rem; gap: 1rem; flex-wrap: wrap;
 }
-.res-t  { font-size: 24px; font-weight: 500; color: var(--text-primary); margin-bottom: 4px; }
+.res-t  { font-size: 30px; font-weight: 500; color: var(--text-primary); margin-bottom: 4px; }
 .res-s  { font-size: 14px; color: var(--text-faint); }
 .btndl  {
   font-size: 14px; font-weight: 500; padding: 9px 20px;
