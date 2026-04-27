@@ -114,7 +114,7 @@ body {
 .hero-stats { display: flex; gap: 12px; flex-wrap: wrap; }
 .hstat {
   position: relative;
-  background: var(--surface);
+  background: color-mix(in srgb, var(--surface) 20%, transparent);
   border: 0.5px solid var(--border-mid);
   border-radius: 8px; padding: 12px 16px 10px 16px;
   min-width: 160px;
@@ -156,7 +156,7 @@ body {
 #contact .sec-body { max-width: none; }
 
 /* ── What I Bring ── */
-.brings-divider { margin-top: 2.5rem; padding-top: 2rem; border-top: none; }
+.brings-divider { margin-top: 1rem; padding-top: 2rem; border-top: none; }
 .brings-grid    { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 1rem; }
 .bc             { background: var(--surface-2); border-radius: 10px; padding: 1.25rem; border: 0.5px solid var(--border); }
 .bc-icon        { width: 30px; height: 30px; border-radius: 6px; background: var(--accent-bg); display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
@@ -167,7 +167,7 @@ body {
 /* ── Experience ── */
 .exp-tabs {
   display: flex;
-  gap: 2rem;
+  gap: calc(2rem + 20px);
   margin-top: 0.25rem;
   margin-bottom: 1rem;
   border-bottom: 0.5px solid var(--border);
@@ -318,7 +318,7 @@ body {
 .talk-legend-dot  { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 .tatags       { display: flex; flex-wrap: wrap; gap: 6px; }
 .vtag-personal { font-size: 18px; padding: 4px 10px; border-radius: 14px; background: var(--teal-bg);    border: 0.5px solid var(--teal-border);    color: var(--teal-text);    }
-.vtag-global   { font-size: 18px; padding: 4px 10px; border-radius: 14px; background: var(--accent-bg); border: 0.5px solid var(--border-mid);     color: var(--accent-text); }
+.vtag-global   { font-size: 18px; padding: 4px 10px; border-radius: 14px; background: var(--crimson-bg); border: 0.5px solid var(--crimson-border); color: var(--crimson-text); }
 
 /* ── Beyond Work — redesigned media rows ── */
 .recents-row {
