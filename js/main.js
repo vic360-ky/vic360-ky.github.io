@@ -169,6 +169,31 @@ function initTabs() {
   });
 }
 
+/* ── Mobile menu ─────────────────────────────── */
+function initMobileMenu() {
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('mobileNav');
+  if (!toggle || !nav) return;
+
+  const closeMenu = () => {
+    document.body.classList.remove('menu-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  };
+
+  toggle.addEventListener('click', () => {
+    const open = document.body.classList.toggle('menu-open');
+    toggle.setAttribute('aria-expanded', String(open));
+  });
+
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) closeMenu();
+  });
+}
+
 /* ── Section reveal on scroll ────────────────── */
 function initSectionReveal() {
   const sections = document.querySelectorAll('.hero-inner, .sec-inner');
@@ -203,5 +228,6 @@ function initSectionReveal() {
 document.addEventListener('DOMContentLoaded', () => {
   initSkills();
   initTabs();
+  initMobileMenu();
   initSectionReveal();
 });
