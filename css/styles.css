@@ -50,15 +50,30 @@
 
   /* ── Bring cards icon bg ── */
   --accent-bg-icon: #001A22;
+
+  --font-body:    'Space Grotesk', sans-serif;
+  --font-mono:    'Space Mono', monospace;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text-primary);
-  line-height: 1.6;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ── Typography ── */
+.sec-tag,
+.hstat-lbl,
+.mq-label,
+.bw-section-label,
+.talk-cat,
+.etag,
+.inbadge,
+.emeta,
+.msub,
+.res-s {
+  font-family: var(--font-mono);
+  letter-spacing: 0.02em;
 }
 
 /* ── Topbar ── */
@@ -92,7 +107,7 @@ body {
 .sec:nth-child(even) { background: var(--bg); }
 .sec-inner  { width: 70%; max-width: 1200px; margin: 0 auto; }
 .sec-tag    { font-size: 18px; font-weight: 500; color: var(--accent-text); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.75rem; }
-.sec-h      { font-size: 42px; font-weight: 500; color: var(--text-primary); margin-bottom: 1rem; }
+.sec-h { font-size: 22px; font-weight: 600; color: var(--text-primary); letter-spacing: -0.01em; margin-bottom: 1rem; }
 .sec-body   { font-size: 18px; color: var(--text-secondary); line-height: 1.8; max-width: 640px; }
 .beyond-intro { max-width: none; }
 
@@ -108,7 +123,7 @@ body {
   border-bottom: 0.5px solid var(--border);
 }
 .hero-inner { width: 70%; max-width: 1200px; margin: 0 auto; }
-.hero-h     { font-size: 64px; font-weight: 500; color: var(--text-primary); line-height: 1.2; margin-bottom: 1rem; }
+.hero-h { font-size: 36px; font-weight: 600; color: var(--text-primary); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; }
 .hero-sub   { font-size: 24px; color: var(--text-secondary); line-height: 1.55; margin-bottom: 2rem; }
 
 .hero-stats { display: flex; gap: 12px; flex-wrap: wrap; }
