@@ -364,7 +364,7 @@ body {
 .reveal-on-scroll {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 480ms ease, transform 520ms ease;
+  transition: opacity 700ms ease, transform 780ms ease;
   will-change: opacity, transform;
 }
 

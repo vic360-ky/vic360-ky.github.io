@@ -187,11 +187,9 @@ function initSectionReveal() {
     return;
   }
 
-  const observer = new IntersectionObserver((entries, obs) => {
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add('is-visible');
-      obs.unobserve(entry.target);
+      entry.target.classList.toggle('is-visible', entry.isIntersecting);
     });
   }, {
     threshold: 0.12,
