@@ -66,14 +66,11 @@ body {
 /* ── Typography ── */
 .sec-tag,
 .hstat-lbl,
-.mq-label,
 .bw-section-label,
-.talk-cat,
 .etag,
 .inbadge,
 .emeta,
-.msub,
-.res-s {
+.msub {
   font-family: var(--font-mono);
   letter-spacing: 0.02em;
 }
@@ -251,7 +248,6 @@ body {
 .fp.active { background: var(--accent); border-color: var(--accent); color: #001219; }
 .fp:hover:not(.active) { color: var(--text-secondary); border-color: var(--accent); }
 
-.legend { display: none; }
 .sgrid  { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 1.25rem; min-height: 280px; align-content: flex-start; }
 
 .st {
@@ -287,26 +283,6 @@ body {
 }
 .bw-section-label:first-of-type { margin-top: 1rem; }
 
-.media-2x2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-  margin-top: 1rem;
-}
-.media-quadrant {
-  background: var(--surface);
-  border: 0.5px solid var(--border);
-  border-radius: 10px;
-  padding: 1rem 1.25rem;
-}
-.mq-label {
-  font-size: 14px; font-weight: 500; color: var(--text-muted);
-  text-transform: uppercase; letter-spacing: 0.06em;
-  margin-bottom: 10px; padding-bottom: 8px;
-  border-bottom: 0.5px solid var(--accent-text);
-}
-.mq-row { display: flex; gap: 8px; flex-wrap: wrap; }
-
 .mcard   { display: flex; flex-direction: column; gap: 5px; width: 63px; flex-shrink: 0; }
 .mposter {
   width: 63px; height: 94px;
@@ -316,23 +292,12 @@ body {
 }
 .mposter img   { width: 100%; height: 100%; object-fit: cover; display: block; }
 .mposter-ph    { font-size: 14px; color: var(--border-mid); text-align: center; padding: 6px; line-height: 1.4; }
-.malbum {
-  width: 63px; aspect-ratio: 1/1;
-  background: var(--surface-2); border-radius: 5px;
-  border: 0.5px solid var(--border); overflow: hidden;
-  display: flex; align-items: center; justify-content: center;
-}
-.malbum img    { width: 100%; height: 100%; object-fit: cover; display: block; }
-.malbum-ph     { font-size: 14px; color: var(--border-mid); text-align: center; padding: 6px; line-height: 1.4; }
 .mlabel        { display: none; }
 .msub          { display: none; }
 
 /* ── Talk to me ── */
 .talk-card    { background: transparent; border: none; border-radius: 0; padding: 0; margin-top: 0; }
 .talk-heading { margin-top: 2.5rem; margin-bottom: 1rem; }
-.talk-legend  { display: flex; gap: 12px; margin-bottom: 10px; flex-wrap: wrap; }
-.talk-legend-item { display: flex; align-items: center; gap: 5px; font-size: 14px; color: var(--text-faint); }
-.talk-legend-dot  { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 .tatags       { display: flex; flex-wrap: wrap; gap: 6px; }
 .vtag-personal { font-size: 18px; padding: 4px 10px; border-radius: 14px; background: var(--teal-bg);    border: 0.5px solid var(--teal-border);    color: var(--teal-text);    }
 .vtag-global   { font-size: 18px; padding: 4px 10px; border-radius: 14px; background: var(--crimson-bg); border: 0.5px solid var(--crimson-border); color: var(--crimson-text); }
@@ -402,22 +367,6 @@ body {
   .alltime-covers-row .mcard { flex: 0 0 auto; width: auto; }
 }
 
-/* ── Resume ── */
-.res-card {
-  background: var(--surface); border: 0.5px solid var(--border);
-  border-radius: 10px; padding: 1.5rem;
-  display: flex; align-items: center; justify-content: space-between;
-  margin-top: 1.5rem; gap: 1rem; flex-wrap: wrap;
-}
-.res-t  { font-size: 30px; font-weight: 500; color: var(--text-primary); margin-bottom: 4px; }
-.res-s  { font-size: 14px; color: var(--text-faint); }
-.btndl  {
-  font-size: 14px; font-weight: 500; padding: 9px 20px;
-  border-radius: 6px; background: var(--accent); color: var(--text-primary);
-  border: none; cursor: pointer; text-decoration: none; display: inline-block;
-}
-.btndl:hover { background: var(--accent-hover); }
-
 /* ── Contact ── */
 .ctarow { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 1.25rem; }
 .ctabtn {
@@ -439,7 +388,4 @@ body {
   .about-top  { grid-template-columns: 1fr; }
   .brings-grid { grid-template-columns: 1fr; }
   .erow   { grid-template-columns: 1fr; gap: 0.5rem; }
-}
-@media (max-width: 560px) {
-  .media-2x2 { grid-template-columns: 1fr; }
 }
