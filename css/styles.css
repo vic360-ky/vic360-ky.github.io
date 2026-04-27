@@ -125,7 +125,7 @@ body {
   border-bottom: 0.5px solid var(--border);
 }
 .hero-inner { width: 70%; max-width: 1200px; margin: 0 auto; }
-.hero-h { font-size: 48px; font-weight: 600; color: var(--text-primary); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; }
+.hero-h { font-size: 56px; font-weight: 600; color: var(--text-primary); line-height: 1.2; letter-spacing: -0.02em; margin-bottom: 1rem; }
 .hero-sub   { font-size: 24px; color: var(--text-secondary); line-height: 1.55; margin-bottom: 2rem; }
 
 .hero-stats { display: flex; gap: 12px; flex-wrap: wrap; }
@@ -178,7 +178,7 @@ body {
 .bc             { background: var(--surface-2); border-radius: 10px; padding: 1.25rem; border: 0.5px solid var(--border); }
 .bc-icon        { width: 30px; height: 30px; border-radius: 6px; background: var(--accent-bg); display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
 .bc-icon        { display: inline-flex; vertical-align: middle; margin-bottom: 0; margin-right: 8px; }
-.bc-t           { font-size: 30px; font-weight: 500; color: var(--text-primary); margin-bottom: 0; display: inline-block; vertical-align: middle; }
+.bc-t           { font-size: 24px; font-weight: 500; color: var(--text-primary); margin-bottom: 0; display: inline-block; vertical-align: middle; }
 .bc-d           { font-size: 18px; color: var(--text-muted); line-height: 1.6; margin-top: 10px; }
 
 /* ── Experience ── */
@@ -215,14 +215,14 @@ body {
 }
 .erow:last-child { border-bottom: none; }
 .emeta           { font-size: 14px; color: var(--text-muted); line-height: 1.7; }
-.emeta strong    { display: block; font-size: 24px; font-weight: 500; color: var(--text-secondary); margin-bottom: 2px; font-family: "Space Grotesk", "Segoe UI", sans-serif; }
+.emeta strong    { display: block; font-size: 20px; line-height: 1.2; font-weight: 500; color: var(--text-secondary); margin-bottom: 2px; font-family: "Space Grotesk", "Segoe UI", sans-serif; }
 .etag {
-  display: inline-block; font-size: 14px; font-weight: 500;
+  display: inline-block; font-size: 12px; font-weight: 500;
   padding: 2px 7px; border-radius: 8px; margin-top: 5px;
   background: var(--accent-bg); color: var(--accent-text); border: 0.5px solid var(--accent);
 }
 .inbadge {
-  display: inline-block; font-size: 14px; font-weight: 500;
+  display: inline-block; font-size: 12px; font-weight: 500;
   padding: 3px 10px; border-radius: 6px; margin-top: 6px;
   background: var(--accent-bg); color: var(--accent-text); border: 0.5px solid var(--accent);
 }
