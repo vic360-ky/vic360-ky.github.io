@@ -466,6 +466,12 @@ body {
   .addrow {
     justify-content: center;
   }
+  .hero-stats { width: 100%; }
+  .hstat,
+  .hstat-location {
+    width: min(100%, 320px);
+    min-width: min(100%, 320px);
+  }
   .hstat { text-align: left; }
   .about-top  { grid-template-columns: 1fr; }
   .about-img { justify-self: center; }
